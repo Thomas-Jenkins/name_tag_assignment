@@ -3,6 +3,7 @@
     --header-background: white;
     --footer-background: rgb(243, 242, 242);
     --border-radius: 15px;
+    --nameTagColor: brown;
 }
 
 body {
@@ -40,7 +41,7 @@ footer {
     display: grid;
     height: 500px;
     width: 500px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #nameTag {
@@ -53,7 +54,7 @@ footer {
 #greeting {
     display: grid;
     grid-template-rows: 60% 40%;
-    background-color:brown;
+    background-color: var(--nameTagColor);
     padding: 2px;
     border-radius: var(--border-radius) var(--border-radius) 0 0;   
 }
@@ -77,18 +78,23 @@ footer {
 
 #bottom {
     display: grid;
-    background-color: brown;
+    background-color: var(--nameTagColor);
     border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 #userInput {
+    display: grid;
     height: 5rem;
     font-size: 2rem;
+    /* border: 2px solid black; */ 
+    max-width: 500px;
     
 }
 #submit {
     height: fit-content;
     font-size: 3rem;
-
+    margin-top: 5px;
 }
+
+
 
 

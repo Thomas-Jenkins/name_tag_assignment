@@ -24,7 +24,7 @@
     <main>
         <div class="box">
             <div id="nameTag">
-                <div id="greeting">
+                <div id="greeting" class="tagColor">
                     <div>
                         <h1>Hello!</h1>
                     </div>
@@ -40,7 +40,7 @@
 
                     </div>
                 </div>
-                <div id="bottom">
+                <div id="bottom" class="tagColor">
                     
                 </div>
             </div>
@@ -49,10 +49,21 @@
             <div id="userInput">
                 <input type="text" id="userName" placeholder="Enter Your Name">
                 <input type="text" id="userPronoun" placeholder="Enter Your Pronouns">
+                <div class="color">
+                    <input type="radio" name="colorSelect" value="red" id="red">
+                    <label for="red">red</label>
+                    <input type="radio" name="colorSelect" value="blue" id="blue">
+                    <label for="blue">blue</label>
+                    <input type="radio" name="colorSelect" value="green" id="green">
+                    <label for="green">green</label>
+                    <input type="radio" name="colorSelect" value="yellow" id="yellow">
+                    <label for="yellow">yellow</label>
+                    <div>
+                        <button id="submit">Sumbit</button>
+                    </div>
+                </div>
             </div>
-            <div>
-            <button id="submit">Sumbit</button>
-            </div>
+            
         </div>
     </main>
 

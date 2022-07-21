@@ -12,6 +12,12 @@ const submit = document.getElementById('submit');
 const userName = document.getElementById('name');
 const userPronouns = document.getElementById('pronouns');
 
+const buttonOne = document.getElementById('red');
+const buttonTwo = document.getElementById('blue');
+const buttonThree = document.getElementById('green');
+const buttonFour = document.getElementById('yellow');
+const tagColorOne = document.getElementById('greeting');
+const tagColorTwo = document.getElementById('bottom');
 
 submit.addEventListener('click', () => {
     const value = userNameInput.value;
@@ -20,4 +26,60 @@ submit.addEventListener('click', () => {
 submit.addEventListener('click', () =>{
     const valueTwo = userPronounInput.value;
     userPronouns.textContent = valueTwo;
+});
+
+function changeColorRed() {
+    const bgColor = tagColorOne;
+    bgColor.style.backgroundColor = '#FF0000';
+}
+
+function changeColorRedTwo() {
+    const bgColor = tagColorTwo;
+    bgColor.style.backgroundColor = '#FF0000';
+}
+  
+function changeColorBlue() {
+    const bgColor = tagColorOne;
+    bgColor.style.backgroundColor = '#0000FF';
+}
+
+function changeColorBlueTwo() {
+    const bgColor = tagColorTwo;
+    bgColor.style.backgroundColor = '#0000FF';
+}
+
+function changeColorGreen() {
+    const bgColor = tagColorOne;
+    bgColor.style.backgroundColor = '#008000';
+}
+
+function changeColorGreenTwo() {
+    const bgColor = tagColorTwo;
+    bgColor.style.backgroundColor = '#008000';
+}
+
+function changeColorYellow() {
+    const bgColor = tagColorOne;
+    bgColor.style.backgroundColor = '#FFFF00';
+}
+function changeColorYellowTwo() {
+    const bgColor = tagColorTwo;
+    bgColor.style.backgroundColor = '#FFFF00';
+}
+
+
+submit.addEventListener('click', () =>{
+    if (buttonOne.checked) {
+        changeColorRed();
+        changeColorRedTwo();
+    } else if (buttonTwo.checked) {
+        changeColorBlue();
+        changeColorBlueTwo();
+    } else if (buttonThree.checked) {
+        changeColorGreen();
+        changeColorGreenTwo();
+    } else if (buttonFour.checked) {
+        changeColorYellow();
+        changeColorYellowTwo();
+    }
 });
