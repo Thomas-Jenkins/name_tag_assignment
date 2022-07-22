@@ -2,6 +2,8 @@
     --background: rgb(224, 234, 247);
     --header-background: white;
     --footer-background: rgb(243, 242, 242);
+    --border-radius: 15px;
+    --nameTagColor: brown;
 }
 
 body {
@@ -10,6 +12,7 @@ body {
     background: var(--background);
     display: grid;
     grid-template-rows: auto 1fr auto;
+    text-align: center;
 }
 
 header {
@@ -33,3 +36,65 @@ footer {
     justify-content: flex-end;
     background-color: var(--footer-background);
 }
+
+.box {
+    display: grid;
+    height: 500px;
+    width: 500px;
+    /* border: 1px solid black; */
+}
+
+#nameTag {
+    display: grid;
+    grid-template-rows: 30% 50% 20%;
+    border-radius: var(--border-radius);    
+    background-color: antiquewhite;
+}
+
+#greeting {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    background-color: var(--nameTagColor);
+    padding: 2px;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;   
+}
+
+#greeting h1 {
+    font-size: 3rem;
+    margin-bottom: 2px;
+}
+#greeting h2 { 
+    font-size: 2rem;
+    margin-top: 2px
+}
+#name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+
+}
+
+
+#bottom {
+    display: grid;
+    background-color: var(--nameTagColor);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+#userInput {
+    display: grid;
+    height: 5rem;
+    font-size: 2rem;
+    /* border: 2px solid black; */ 
+    max-width: 500px;
+    
+}
+#submit {
+    height: fit-content;
+    font-size: 3rem;
+    margin-top: 5px;
+}
+
+
+
+
